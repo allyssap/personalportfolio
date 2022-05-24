@@ -1,0 +1,60 @@
+body {
+    position: relative;
+    color: black;
+  }
+h1, h2, h3, h4, h5, p{
+    color:black;
+}
+main{
+  color:black;
+  display:block;
+  max-width: 900px;
+  margin: auto;
+}
+
+.navbk{
+    background-color: white;
+}
+
+
+#section1 {padding:50px;height:auto;color: #fff; background-color: white;}
+#section2 {padding:50px;height:auto;color: #fff; background-color: #eeeeee;}
+#photo200px{
+    margin: 15px;
+    max-width: 250px;
+    height: auto;
+}
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_title */
+* {
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: white;
+    background: rgba(255, 255, 255, 0.5); /* White see-through */
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
