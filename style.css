@@ -21,7 +21,8 @@ main{
 #section2 {padding:50px;height:auto;color: #fff; background-color: #eeeeee;}
 #photo200px{
     margin: 15px;
-    max-width: 250px;
+    width: 200px;
+    max-width: 100%;
     height: auto;
 }
 
