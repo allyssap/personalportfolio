@@ -21,8 +21,18 @@ main{
 #section2 {padding:50px;height:auto;color: #fff; background-color: #eeeeee;}
 #photo200px{
     margin: 15px;
-    max-width: 250px;
+    width: 200px;
+    max-width: 100%;
     height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  #photo200px{
+    margin: 15px;
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+}
 }
 
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_title */
