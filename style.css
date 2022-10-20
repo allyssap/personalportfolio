@@ -86,12 +86,6 @@ p{
   .tab button:hover {
     background-color: #b3b9ce;
   }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    filter:drop-shadow(30px 10px 4px #010911);
-  }
-  
   /* Style the tab content */
   .tabcontent {
     color: #719bd1;
@@ -103,6 +97,9 @@ p{
   .tabcontent h4{
     color: inherit;
     margin-left: 5%;
+  }
+  .navigateto{
+    float:inline-start;
   }
 
 #experiencediv{
@@ -116,8 +113,7 @@ p{
 }
 
 button{
-  filter: drop-shadow(30px 10px 4px #010911);
-    background-color: #b3b9ce; /* Green */
+    background-color: #b3b9ce;
   border: none;
   color: #b3b9ce;
   padding: 15px 32px;
