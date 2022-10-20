@@ -1,90 +1,128 @@
+html {
+  display:block;
+  margin: auto;
+  }
+
 body {
-    position: relative;
-    color: black;
-  }
-h1, h2, h3, h4, h5, p{
-    color:black;
-}
-main{
-  color:black;
-  display:block;
-  max-width: 90%;
-  margin: auto;
+  font-family: 'Kanit', sans-serif;
+  scroll-snap-type: x mandatory;
+  position: relative;
+  background-color: #031120;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  font-size:20px ;
 }
 
-.navbk{
-    background-color: white;
+.content{
+    max-width: 70%;
 }
-
-
-#section1 {padding:50px;height:auto;color: #fff; background-color: white;}
-#section2 {padding:50px;height:auto;color: #fff; background-color: #eeeeee;}
-#photo200px{
-  margin: 15px;
-  width:100%;
-  height:auto;
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    position: relative;
-    color: black;
-  }
-h1, h2, h3, h4, h5, p{
-    color:black;
-}
-main{
-  color:black;
-  display:block;
-  max-width: 900px;
-  margin: auto;
-}
-
-.navbk{
-    background-color: white;
-}
-
-
-#section1 {padding:50px;height:auto;color: #fff; background-color: white;}
-#section2 {padding:50px;height:auto;color: #fff; background-color: #eeeeee;}
-#photo200px{
-  margin: 15px;
-  width: 200px;
-  max-width: 100%;
-  height: auto;
-}
-}
-
-/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_title */
-* {
-    box-sizing: border-box;
-}
-.container {
-    position: relative;
-    width: 50%;
-    max-width: 300px;
-  }
-  
-  .image {
-    display: block;
+nav{
     width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
-    position: absolute; 
-    bottom: 0; 
-    background: white;
-    background: rgba(255, 255, 255, 0.5); /* White see-through */
+    background-color: #031120;
+}
+
+#navbarFont a{
+    color: #b3b9ce;
+}
+
+
+h1{
+    position: relative;
+    color: #719bd1;
     width: 100%;
-    transition: .5s ease;
-    opacity:0;
+    left: 0;
+    font-size: calc(1rem + 1.5vw);
+}
+p{
+    color: #b3b9ce;
+}
+.lists{
+    color:#b3b9ce;
+    margin-left: 5%;
+    list-style-type:square;
+}
+
+.section{
+    transform: translateY(50%);
+    height: 100vh;
+    scroll-snap-align: top;
+    position: relative;
+    top: 50%;
     color: black;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
+    width:70%;
+    left: 0;
+}
+
+.section p{
+    font-size: 25px;
+    padding-left: 5% ;
+    width: 95%;
+}
+/* Style the tab */
+.tab {
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    width:60%;
   }
   
-  .container:hover .overlay {
-    opacity: 1;
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
   }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #b3b9ce;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    filter:drop-shadow(30px 10px 4px #010911);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    color: #719bd1;
+    margin:auto;
+    padding-top: 5%;
+    display: none;
+    width:50%;
+  }
+  .tabcontent h4{
+    color: inherit;
+    margin-left: 5%;
+  }
+
+#experiencediv{
+    display: none;
+}
+#experienceactive{
+    width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+button{
+  filter: drop-shadow(30px 10px 4px #010911);
+    background-color: #b3b9ce; /* Green */
+  border: none;
+  color: #b3b9ce;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}

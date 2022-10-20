@@ -1,75 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="style.css">
 
- 
-    <title>Allyssa Poulin</title>
-</head>
-<!-- Collapsable bootstrap navigation menu-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div class="m-4">
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light navbk">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light navbk" id="navbarFont">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">Allyssa Poulin</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="nav navbar-nav">
-                        <a href="index.html" class="nav-item nav-link">About</a>
-                        <a href="proj.html" class="nav-item nav-link">Projects</a>
-                        <a href="resume.html" class="nav-item nav-link">Resume</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        <!-- not including blog for now <a href="blog.html" class="nav-item nav-link">Blog</a> -->
+                    <div class="nav navbar-nav" id="navbarFont">
+                        <a href="#intro" class="nav-item nav-link">about</a>
+                        <a href="#projects" class="nav-item nav-link">projects</a>
+                        <a href="#experience" class="nav-item nav-link">experience</a>
                     </div>
                 </div>
             </div>
         </nav>
-        <main class="mx-auto">
-        
-            <div id="section1" class="container-fluid">
-                <h1></h1>
-                <p>Growing up I had two passions, technology and reading! The first website I coded at 10 years old showed off my favourite books, I wish I kept it to show it off! Currently, I use my two passions to help me advance my career as a software developer.</p>
+
+
+            <div class="section">
+                <h1>> hi, i'm allyssa</h1>
+                <p>I am a software engineer graduating in April of 2023. I have experience in Java, C++ and Python. 
+                    I am interested in full stack development, machine learning, games, and learning new things.
+                </p>
+            </div>
+            
+            <a id="intro" ></a>
+            <div class="section">
+                <h1>> about me</h1>
+                <p>I am currently a fourth year software engineering student at the University of Windsor. 
+                    Here are some technologies I have been learning lately:
+                </p>
+                <ul class="lists">
+                    <li>Javascript</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>C++</li>
+                </ul>
+            </div>
+            
+            <a id="projects"></a>
+            <div class="section" >
+                <h1>> my projects</h1>
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'a')">Loan Interest Visualizer</button>
+                    <button class="tablinks" onclick="openCity(event, 'c')">Unity Game Projects</button>
+                    <button class="tablinks" onclick="openCity(event, 'b')">Library Database System</button>
                 </div>
-            <div id="section2" class="container-fluid">
-                <h1>High School</h1>
-                <img src="img/grad-2019.jpg" id="photo200px"class="rounded float-right image-responsive" alt = "My highschool graduation, 2019">
-                <p></br>This is where I discovered my passion for programming. In 10th grade, I knew I needed to figure out what courses I need to take to get the required prerequisites to choose my university program. My older sister encouraged me to take a programming class. Besides simple HTML and CSS, in that class I learned Python. I created simple shapes using math and Pygame, and a simple drawing software. This class allowed me to discover my passion for programming, and the next semester I took a computer engineering class, where I learned about the hardware of computers, and even experimented with an Arduino and built a simple self driving car.</p>
-            </div>
-            <div id="section1" class="container-fluid">
-                <h1>Robotics</h1>
-                <img src="img/robotics.jpg" id="photo200px"class="rounded float-left image-responsive" alt = "First Robotics Awards Picture, 2019">
-                <p></br>After that, I joined my school’s robotics team, and learned LabView to program the robot, and signed up for the programming and computer engineering classes for the following year. I finally found my passion that I wanted to pursue in post-secondary. I set my sights high, to the top university in the country for computer science and was rejected. It broke my heart, but I did not let it stop me from following my dreams.</p>
-            </div>
-            <div id="section2" class="container-fluid">
-                <h1>Now</h1>
-                <p>I am in my fourth year of Computer Science at the University of Windsor, specializing in Software Engineering. I could not be prouder of my program and my accomplishments this far. Currently, I work under Dr. Christie Ezeife as a research database programmer, working with HTML, CSS, PHP, and SQL, and I am incredibly excited about the opportunity to continue working with her this summer.</p> 
-            </div>
-            <div id="section1" class="container-fluid text-center">
-                    <p>If you like my work, or like me, I would love to get into contact with you!</p>
-            </div>
-        </main> 
 
-        <footer class="page-footer">
-            <div class="d-flex flex-row justify-content-center">
-            <div class="p-2">226-280-7771</div>
-            <div class="p-2">poulina@uwindsor.ca</div>
-            <div class="p-2">  <a href= "https://www.linkedin.com/in/poulina/">Linkedin</a></div>
-            <div class="p-2"><a href= "https://github.com/allyssap">Github</a></div>
+                <div id="a" class="tabcontent">
+                <h3>Loan Interest Rate Calculator and Visualizer</h3>
+                    <h4>Javascript/HTML/CSS</h4>
+                    <ul class="lists">
+                        <li>
+                            Created and designed an interactive web app for students to
+                            use to help understand how interest on a $1000 loan works
+                        </li>
+                        <li>
+                            Utilized Google Charts to display interactive and colour
+                            coded charts
+                        </li>
+                        <li>
+                            Ensured readable and maintainable code   
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="b" class="tabcontent">
+                    <h3>Library Database System</h3>
+                    <h4>MySQL/PHP/Java</h4>
+                    <ul class="lists">
+                        
+                        <li>
+                            Database web application development using PHP and MYSQL for a library book checking system
+                        </li>
+                        <li>
+                            Designed and implemented queries to be used on the database
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="c" class="tabcontent">
+                    <h3>Unity Game Projects</h3>
+                    <h4>C#/Unity</h4>
+                    <ul class="lists">
+                        <li>
+                            Designed and programmed a first-person shooter game, a 3D puzzle game, and a fight simulation game  
+                        </li>
+                        <li>
+                            Developed using object-oriented design principles to ensure reusability of code
+                        </li>
+                        <li>
+                            Utilized online documentations to develop and finalize the product
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
-        </footer>
+            
+            <a id="experience"></a>
+            <div class="section">
+                <h1>> my experience</h1>
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'TA')">Teaching Assistant</button>
+                    <button class="tablinks" onclick="openCity(event, 'RP')">Research Programmer</button>
+                    <button class="tablinks" onclick="openCity(event, 'CT')">Crew Trainer</button>
+                </div>
+
+                <div id="TA" class="tabcontent">
+                    <h3>Teaching Assistant</h3>
+                    <h4>University of Windsor</h4>
+                    <ul class="lists">
+                        <li>
+                            Teaching assistant for a third- and fourth-year artificial intelligence in game design and development course  
+                        </li>
+                        <li>
+                            Hosted office hours, tutorial sessions, tutored students one on one, about working in Unity and game design principles 
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="RP" class="tabcontent">
+                    <h3>Research Database Programmer</h3>
+                    <h4>University of Windsor</h4>
+                    <ul class="lists">
+                        <li>
+                            Developed efficient SQL DDL and DML statements to process and retrieve data
+                        </li>
+                        <li>
+                            Developed using HTML, JavaScript, and CSS for frontend  of application 
+                        </li>
+                        <li>
+                            Assisted with implementation, design, testing, and analysis  of database search algorithms 
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="CT" class="tabcontent">
+                    <h3>Crew Trainer</h3>
+                    <h4>McDonald's Canada</h4>
+                    <ul class="lists">
+                        <li>
+                            Ensured great customer service and satisfaction by assessing  needs and communicating with all types of customers- 
+                            by approaching the situation empathetically with the intent to  help solve the situation  
+                        </li>
+                        <li>
+                            Trained new employees on procedures and standards, and  continuing to oversee and lead efficiently on the floor
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <script>
+                function openCity(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+    </body>
 </html>
