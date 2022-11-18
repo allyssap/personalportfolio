@@ -25,10 +25,22 @@ nav{
 }
 
 #navbarFont a{
+  padding-left: 40px;;
     color: #b3b9ce;
 }
 
-
+.navbar-toggler{
+    width: 47px;
+    height: 34px;
+    background-color: #031120;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+ }
 h1{
     position: relative;
     color: #719bd1;
@@ -122,3 +134,21 @@ button{
   display: inline-block;
   font-size: 20px;
 }
+@media (max-width: 768px){
+  .tab {
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    width:100%;
+  }
+  .tabcontent {
+    color: #719bd1;
+    margin:auto;
+    padding-top: 5%;
+    display: none;
+    width:100%;
+  }
+
+ }
