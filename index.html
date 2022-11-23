@@ -31,6 +31,7 @@
                         <a href="#intro" class="nav-item nav-link">about</a>
                         <a href="#projects" class="nav-item nav-link">projects</a>
                         <a href="#experience" class="nav-item nav-link">experience</a>
+                        <a href="#contact" class="nav-item nav-link">contact</a>
                     </div>
                 </div>
             </div>
@@ -59,17 +60,18 @@
             </div>
             
             <a id="projects"></a>
-            
             <div class="section" >
-                <h1>> my projects</h1>
+            <span id="repos">
+            <h1>> my projects</h1>
+            
                 <div class="tab">
-                    <a href="#content"></a><button class="tablinks" onclick="openCity(event, 'b')">Article Summarizer</button></a>
-                    <a href="#content"><button class="tablinks" onclick="openCity(event, 'a')">Loan Interest Visualizer</button></a>
-                    <a href="#content"></a><button class="tablinks" onclick="openCity(event, 'c')">Unity Game Projects</button></a>
+                    <a href="#repos"><button class="tablinks" onclick="openTab(event, 'b')">Article Summarizer</button></a>
+                    <a href="#repos"><button class="tablinks" onclick="openTab(event, 'a')">Loan Interest Visualizer</button></a>
+                    <a href="#repos"><button class="tablinks" onclick="openTab(event, 'c')">Unity Game Projects</button></a>
                 </div>
                 
                 <div id="a" class="tabcontent">
-                <h3>Loan Interest Rate Calculator and Visualizer</h3>
+                    <h3>Loan Interest Rate Calculator and Visualizer</h3>
                     <h4>Javascript/HTML/CSS</h4>
                     <p>Status: completed</p>
                     <ul class="lists">
@@ -115,17 +117,20 @@
                         </li>
                     </ul>
                 </div>
+            </span>
                 
             </div>
             
             <a id="experience"></a>
             <div class="section">
+                <span id="repos2">
                 <h1>> my experience</h1>
                 <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'TA')">Teaching Assistant</button>
-                    <button class="tablinks" onclick="openCity(event, 'RP')">Research Programmer</button>
-                    <button class="tablinks" onclick="openCity(event, 'CT')">Crew Trainer</button>
+                    <a href="#repos2"><button class="tablinks" onclick="openTab(event, 'TA')">Teaching Assistant</button></a>
+                    <a href="#repos2"><button class="tablinks" onclick="openTab(event, 'RP')">Research Programmer</button></a>
+                    <a href="#repos2"><button class="tablinks" onclick="openTab(event, 'CT')">Crew Trainer</button></a>
                 </div>
+
 
                 <div id="TA" class="tabcontent">
                     <h3>Teaching Assistant</h3>
@@ -169,24 +174,19 @@
                         </li>
                     </ul>
                 </div>
+                </span>
             </div>
-
-            <script>
-
-                function openCity(evt, cityName) {
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(cityName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }
-            </script>
+            <a id="contact"></a>
+            <div class="section">
+                <h1>> get in touch</h1>
+                
+                <div class="tab">
+                    <button class="tablinks" onclick="location.href='https://www.linkedin.com/in/poulina/';" >LinkedIn</button>
+                    <a href="mailto:allyssapoul@outlook.com"><button class="tablinks">Email Me: allyssapoul@outlook.com</button></a>
+                    <button class="tablinks">Cell:(226)280-7771</button>
+                    <a href="/files/Resume.pdf"><button class="tablinks">Resume</button></a>
+                </div>
+            </div>
             <script src="script.js"></script>
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
