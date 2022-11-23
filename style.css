@@ -142,7 +142,7 @@ button{
   display: inline-block;
   font-size: 20px;
 }
-@media (max-width: 768px){
+@media (max-width: 770px){
   .tab {
     margin: auto;
     display:flex;
