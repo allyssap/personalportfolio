@@ -119,14 +119,22 @@ p{
 ///about section
 .about-content{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, fr);
     height:100%;
+    .left-about{
+        display: flex;
+        align-items: center;
+        position: relative;
+       
+    }
     .right-about{
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: left;
-        padding-right: 5rem;
+        padding-right: 15rem;
         .name{
+            position: relative;
             font-size: 3rem;
             span{
                 color: var(--color-secondary);
