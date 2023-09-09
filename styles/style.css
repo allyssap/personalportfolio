@@ -58,6 +58,16 @@ section {
   padding-top: 20rem;
 }
 
+.findMe {
+  padding: 10px;
+  margin: 5px;
+  font-size: 32px;
+  transform: translate(100px);
+}
+.findMe a {
+  padding: 15px;
+}
+
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
@@ -115,21 +125,23 @@ p {
 }
 
 .about-content {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(2, fr);
   height: 100%;
 }
 .about-content .left-about {
-  display: flex;
   align-items: center;
   position: relative;
+  float: left;
+  flex-grow: 1;
 }
 .about-content .right-about {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: left;
-  padding-right: 15rem;
+  float: right;
+  transform: translate(-10rem);
 }
 .about-content .right-about .name {
   position: relative;
@@ -220,6 +232,21 @@ p {
 .portfolio-item:hover .hover-items {
   opacity: 1;
   transform: scale(1);
+}
+
+.work-experience {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  height: 100%;
+}
+.work-experience .work-item .workplace {
+  position: relative;
+  background-color: white;
+}
+.work-experience .work-item .workplace span {
+  color: var(--color-tertiary);
 }
 
 @media screen and (max-width: 970px) {
