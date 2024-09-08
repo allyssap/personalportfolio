@@ -3,7 +3,7 @@
   --color-primary: #403d58;
   --color-primary-shadow: #2c2a3d;
 
-  --color-accent: #746594;
+  --color-accent: #b1a3cc;
   --color-secondary: #5a5c4c;
   --color-tertiary: #9b9f75;
   --color-black: #000000;
@@ -29,7 +29,7 @@ body, html {
 }
 
 img{
-  opacity: 50%;
+  opacity: 10%;
   height: 200px;
   width: 200px;
 }
@@ -135,6 +135,10 @@ section.active{
   pointer-events: none;
 }
 
+a i{
+  font-size: 30px;
+}
+
 .round.active, .round.active i {
   background-color: #55583d;
   transition: all ease-in-out;
@@ -145,10 +149,8 @@ textarea {
   resize: none;
 }
 
-
-
 @media (max-width: 800px) {
-  .controls{
+  .round{
     transform: translate(0, -5rem);
   }
 }
