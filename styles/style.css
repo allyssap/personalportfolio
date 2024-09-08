@@ -141,6 +141,9 @@ section.active{
   color: var(--color-white);
 }
 
+textarea {
+  resize: none;
+}
 
 
 
