@@ -4,170 +4,281 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/timeline.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,800;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
-
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Allyssa Poulin</title>
 </head>
 
 <body class="main-content">
     
     <main>
-        <div class="content">
-            <section class="section sec1 about active" id="about">
-        
-            <div class="about-content">
-                    <div class="left-about">
-                        <div class="container">
-                        </div>
+        <div class="container ">
+            <section class="active " id="about">
+                <div class="row vh-100 " >
+                    <div class="col w-50 d-none d-md-block ">
+                        
                     </div>
-                    <div class="right-about">
-                        <div class="wrapper">
-                            <h1 class="name">Hi, I'm <span>Allyssa.</span></h1>
-                            <h1 class="name">Software Engineer.</h1>
-                                <p class="tag-line">
-                                    I love to solve problems with code. 
-                                </p>
-                                <div class="findMe">
-                                    <a href="https://www.linkedin.com/in/allyssap/" class=""><i class="fa-brands fa-linkedin" style="color: #746594;"></i></a>
-                                    <a href="https://github.com/allyssap" class=""><i class="fa-brands fa-square-github" style="color: #746594;"></i></a>
-                                    <a href="docs/AllyssaPoulin-Resume.pdf"><i class="fa-solid fa-download" style="color: #746594;"></i></a>
-                                </div>
+                    <div class="col my-auto">
+                        <h1 class="name">Hi, I'm <span class="introduceMyself">Allyssa.</span></h1>
+                        <h1 class="name">Software Engineer.</h1>
+                        <p class="tag-line">
+                            I love to solve problems with code. 
+                        </p>
+                        <div class="findMe">
+                            <a href="https://www.linkedin.com/in/allyssap/" class="socials"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/allyssap" class="socials"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="docs/AllyssaPoulin-Resume.pdf" class="socials"><i class="fa-solid fa-download"></i></a>
                         </div>
                     </div>
                 </div> 
             </section>
-            <section class="section sec2 projects" id="projects">
-                <div class="main-title">
-                    <h2>my Projects</h2>
-                </div>
-                <div class="portfolio">
 
-                    <!-- MICROBLOG-->
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="images/blog.jpg" alt="">
-                        </div>
-                        <div class="hover-items">
-                            <h3>improving MicroBlog</h3>
-                            <div class="icons">
-                                <a href="https://github.com/allyssap/microblog" class="icon">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                                <!----<a href="oops.html" class="icon"><i class="fa-brands fa-youtube"></i></a> --->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PROJECT S-->
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="images/ninja.png" alt="">
-                        </div>
-                        <div class="hover-items">
-                            <h3>project S</h3>
-                            <div class="icons">
-                                <a href="https://github.com/allyssap/Project-S" class="icon">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                                <!----<a href="oops.html" class="icon"><i class="fa-brands fa-youtube"></i></a> --->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- COMPOUND INTEREST PROJECT-->
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="images/compoundInterest.jpeg" alt="">
-                        </div>
-                        <div class="hover-items">
-                            <h3>interest visualizer</h3>
-                            <div class="icons">
-                                <a href="https://github.com/allyssap/CompoundInterestVisualizer" class="icon">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                                <a href="https://allyssap.github.io/CompoundInterestVisualizer/" class="icon">
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                                
-                                <!----<a href="oops.html" class="icon"><i class="fa-brands fa-youtube"></i></a> --->
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- JAVA3D escape room-->
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="images/escape.jpeg" alt="">
-                        </div>
-                        <div class="hover-items">
-                            <h3>Java3D Escape Room</h3>
-                            <div class="icons">
-                                <a href="https://github.com/allyssap/EscapeRoom-java3D/tree/main" class="icon">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                                <!----<a href="oops.html" class="icon"><i class="fa-brands fa-youtube"></i></a> --->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CMD LIE HANGMAN-->
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="images/hangman.jpg" alt="">
-                        </div>
-                        <div class="hover-items">
-                            <h3>hangman</h3>
-                            <div class="icons">
-                                <a href="https://github.com/allyssap/hangman" class="icon">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                                <!----<a href="oops.html" class="icon"><i class="fa-brands fa-youtube"></i></a> --->
+            <section class=" " id="projects">
+                <div class="row vh-100  " >
+                    <div class="col  ">
+                        <h1 class="title my-5">Projects</h1>
+                        <div class="scrollwindow">
+                            <div class="row row-cols-2 row-cols-lg-4 g-2 ">
+                                <div class="col">
+                                    <div class="card text-bg-dark">
+                                        <img src="images/blog.jpg" class="card-img " alt="...">
+                                        <div class="card-img-overlay">
+                                            <h5 class="card-title">Improving MicroBlog</h5>
+                                            <p class="card-text"></p>
+                                            <p class="card-text"><small>2023</small></p>
+                                            <a href="#" class="stretched-link"></a>
+                                            <a href="https://github.com/allyssap/microblog"  style="position: relative;z-index: 100;"><i class="fa-brands fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card text-bg-dark">
+                                        <img src="images/ninja.png" class="card-img " alt="...">
+                                        <div class="card-img-overlay">
+                                            <h5 class="card-title">Project S</h5>
+                                            <p class="card-text"></p>
+                                            <p class="card-text"><small>2023</small></p>
+                                            <a href="#" class="stretched-link"></a>
+                                            <a href="https://github.com/allyssap/Project-S" style="position: relative;z-index: 100;"><i class="fa-brands fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card text-bg-dark">
+                                        <img src="images/compoundInterest.jpeg" class="card-img " alt="...">
+                                        <div class="card-img-overlay">
+                                            <h5 class="card-title">Compound Interest Visualiser</h5>
+                                            <p class="card-text"></p>
+                                            <p class="card-text"><small>2023</small></p>
+                                            <a href="#" class="stretched-link"></a>
+                                            <a href="https://github.com/allyssap/CompoundInterestVisualizer" style="position: relative;z-index: 100;">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                            <a href="https://allyssap.github.io/CompoundInterestVisualizer/" style="position: relative;z-index: 100;" >
+                                                <i class="fa-solid fa-link"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card text-bg-dark">
+                                        <img src="images/escape.jpeg" class="card-img " alt="...">
+                                        <div class="card-img-overlay">
+                                            <h5 class="card-title">Java3D Escape Room</h5>
+                                            <p class="card-text"></p>
+                                            <p class="card-text"><small>2022</small></p>
+                                            <a href="#" class="stretched-link"></a>
+                                            <a href="https://github.com/allyssap/EscapeRoom-java3D/tree/main" style="position: relative;z-index: 100;"><i class="fa-brands fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card text-bg-dark">
+                                        <img src="images/hangman.jpg" class="card-img " alt="...">
+                                        <div class="card-img-overlay">
+                                            <h5 class="card-title">hangman</h5>
+                                            <p class="card-text"></p>
+                                            <p class="card-text"><small>2022</small></p>
+                                            <!-- <a href="#" class="stretched-link"></a> -->
+                                            <a href="https://github.com/allyssap/hangman" style="position: relative;z-index: 100;"><i class="fa-brands fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-        <!--WORK EXPERIENCE
-            <section class="section sec3 work" id="work">
-                <div class="main-title">
-                    <h2>my Work</h2>
-                </div>
-                <div class="Work-experience">
-
-                    
-                    <div class="work-item">
-                        <h4 class="workplace">Technical Specialist <span>@ AlphaKor</span></h4>
+            <section class=" " id="work">
+                <div class="d-none d-lg-block ">
+                    <div class=" row row-cols-2 vh-100 " >
+                        <div class=" col d-flex flex-column my-auto  ">
+                            <div class="col  mb-5 ">
+                                <h1 class="title">Work Experience</h1>
+                                <p> This is a showcase of some of my work experience. </p>
+                            </div>
+                            <div class="col  ">
+                                <div class="jobDescription show" id="">
+                                    <h3>Open To Opportunities!</h3>
+                                    <p>I am always on the hunt for new and exciting opportunities. Please fill out the following form to quick contact me, or message me on <a href="https://www.linkedin.com/in/allyssap/">linkedin</a></p>
+                                    <div class="">
+                                        <form method="post" action="/scripts/send-email.php" class="">
+                                            <div class="mb-1">
+                                                <label class="form-label visually-hidden" for="fname">Name</label>
+                                                <input type="text" class="form-control " id="fname" name="firstname" placeholder="Name">
+                                            </div>
+                                            <div class="mb-1">
+                                                <label for="emailAddress" class="form-label visually-hidden">Email address</label>
+                                                <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" placeholder="Email">
+                                                <!-- <div class="form-text text-white text-end">So I know who to email back!</div> -->
+                                            </div>
+                                            <div class="mb-1">
+                                                <label for="subject" class="form-label visually-hidden">Subject</label>
+                                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                                            </div>
+                                            <div class="mb-1">
+                                                <label for="message" class="form-label visually-hidden">Message</label>
+                                                <textarea id="message" class="form-control" name="subjmessageect" placeholder="Whats your message?" style="height:100px;overflow-y: scroll;"></textarea>
+                                            </div>  
+                                            <div class="mb-1">
+                                                <input type="submit" class="form-control" value="Send Message!">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="jobDescription " id="alphakor2">
+                                    <h3>Software Developer</h3>
+                                    <h5>AlphaKOR Group | Jan 2024 - Present</h5>
+                                    <p> At Alphakor, I worked my way from a Remote Technical Specialist over to the Software Design Team I became a Junior Developer and chased my interests to my current role as the FrontEnd Design Lead. </p>
+                                </div>
+                                <div class="jobDescription" id="alphakor1">
+                                    <h3>Technical Specialist</h3>
+                                    <h5>AlphaKOR Group | June 2023 - Jan 2024</h5>
+                                    <p> My first role out from University. I fixed technical issues for end-users and developed documentation for future technicians.</p>
+                                </div>
+                                <div class="jobDescription " id="uwindsordba">
+                                    <h3>Database Research Assistant</h3>
+                                    <h5>University of Windsor | Jan 2022 - Dec 2022</h5>
+                                    <p> Here, I worked with a Professor from the University of Windsor to develop content for future database courses. </p>
+                                </div>
+                                <div class="jobDescription" id="uwindsorta">
+                                    <h3>Video Game Development Teaching Assistant</h3>
+                                    <h5>University of Windsor | Jan 2022 - Dec 2022</h5>
+                                    <p> After LOVING my Vieo game design and development course, and scoring a 96% grade, my professor asked my to be the teaching assistant for the next semesters advanced course and the following years course.</p>
+                                </div>
+                                <div class="jobDescription" id="volunteerWIC">
+                                    <h3>Web Developer </h3>
+                                    <h5>Volunteer | Sep 2021 - Dec 2021</h5>
+                                    <p>Volunteered my experience in developing websites to the Women in Chemistry Club at the University. Design, developed and hosted the website.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col scrollwindow my-auto " id="jobs">
+                            <div class="jobThumb" data-id="alphakor2" >
+                                <h3 class="mt-1">Software Developer @ AlphaKOR</h3>
+                            </div>
+                            <div class="jobThumb" data-id="alphakor1">
+                                <h3 class="mt-1">Technical Specialist @ AlphaKOR</h3>
+                            </div>
+                            <div class="jobThumb" data-id="uwindsordba">
+                                <h3 class="mt-1">Database Research @ UWindsor</h3>
+                            </div>
+                            <div class="jobThumb" data-id="uwindsorta">
+                                <h3 class="mt-1">Teaching Assistant @ UWindsor</h3>
+                            </div>
+                            <div class="jobThumb" data-id="volunteerWIC">
+                                <h3 class="mt-1">Web Developer 4 WIC</h3>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-            </section>-->
-        </div>
+                <div class="d-md-none my-auto mt-4 mb-2">
+                    <div class="row px-2" >
+                        <div class="p-2 ">
+                            <h1 class="title">Work Experience</h1>
+                            <p> This is a showcase of some of my work experience. </p>
+                        </div>
+                        <div class=" px-2">
+                            <div class=" scrollwindow " id="jobs">
+                                <div class=" " id="alphakor2">
+                                    <h3>Software Developer</h3>
+                                    <p>AlphaKOR Group | Jan 2024 - Present</p>
+                                    <p> At Alphakor, I worked my way from a Remote Technical Specialist over to the Software Design Team I became a Junior Developer and chased my interests to my current role as the FrontEnd Design Lead. </p>
+                                    <hr>
+                                </div>
+                                <div class=" " id="alphakor2">
+                                    <h3>Software Developer</h3>
+                                    <p>AlphaKOR Group | Jan 2024 - Present</p>
+                                    <p> At Alphakor, I worked my way from a Remote Technical Specialist over to the Software Design Team I became a Junior Developer and chased my interests to my current role as the FrontEnd Design Lead. </p>
+                                    <hr>
+                                </div>
+                                <div class=" " id="alphakor1">
+                                    <h3>Technical Specialist</h3>
+                                    <p>AlphaKOR Group | June 2023 - Jan 2024</p>
+                                    <p> My first role out from University. I fixed technical issues for end-users and developed documentation for future technicians.</p>
+                                    <hr>
+                                </div>
+                                <div class=" " id="uwindsordba">
+                                    <h3>Database Research Assistant</h3>
+                                    <p>University of Windsor | Jan 2022 - Dec 2022</p>
+                                    <p> Here, I worked with a Professor from the University of Windsor to develop content for future database courses. </p>
+                                    <hr>
+                                </div>
+                                <div class=" " id="uwindsorta">
+                                    <h3>Video Game Development Teaching Assistant</h3>
+                                    <p>University of Windsor | Jan 2022 - Dec 2022</p>
+                                    <p> After LOVING my Vieo game design and development course, and scoring a 96% grade, my professor asked my to be the teaching assistant for the next semesters advanced course and the following years course.</p>
+                                    <hr>
+                                </div>
+                                <div class=" " id="uwindsorta">
+                                    <h3>Web Developer Volunteer</h3>
+                                    <p>Volunteer | Jan 2022 - Dec 2022</p>
+                                    <p>Volunteered my experience in developing websites to the Women in Chemistry Club at the University. Design, developed and hosted the website.</p>                                    
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+        </div> 
     </main>
 
-    <div class="controls">
-        <button class="control control-1 about active-btn" data-id="about">
-            <i class="fa-solid fa-user"></i>
-        </button>
-        <button class="control control-2 projects" data-id="projects">
-            <i class="fa-solid fa-code"></i>
-        </button>
-        <!--
-        <button class="control control-3 work" data-id="work">
-            <i class="fa-solid fa-briefcase"></i>
-        </button>
-        -->
-
-
+    <div class="position-fixed z-3 top-50 end-0 translate-middle-y d-none d-lg-block">
+        <div class="d-flex flex-column m-5 gap-3 controls">
+            <button class="round active" data-id="about">
+                <i class="fa-solid fa-user"></i>
+            </button>
+            <button class="round" data-id="projects">
+                <i class="fa-solid fa-code"></i>
+            </button>
+            <button class="round" data-id="work">
+                <i class="fa-solid fa-briefcase"></i>
+            </button>
+        </div>
     </div>
 
-    <script src="scripts/app.js"></script>
+    <div class="position-fixed z-3 top-100 start-50 translate-middle d-block d-lg-none">
+        <div class="d-flex flex-row gap-3 controls ">
+            <button class="round active" data-id="about">
+                <i class="fa-solid fa-user"></i>
+            </button>
+            <button class="round" data-id="projects">
+                <i class="fa-solid fa-code"></i>
+            </button>
+            <button class="round" data-id="work">
+                <i class="fa-solid fa-briefcase"></i>
+            </button>
+        </div>
+    </div>
+
     <script src="https://kit.fontawesome.com/6a0315597e.js" crossorigin="anonymous"></script>
+    <script src="scripts/app.js"></script>
 </body>
 </html>
