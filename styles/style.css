@@ -151,8 +151,12 @@ textarea {
 
 @media (max-width: 800px) {
   .round{
-    transform: translate(0, -5rem);
+    transform: translate(0, -3rem);
   }
+  .scrollwindow{
+    max-height: 50vh;
+  }
+  
 }
 
 
